@@ -1,0 +1,50 @@
+.requests-list{
+    max-width: 1070px;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+.favorites-title{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 40px;
+    margin-top: 40px;
+}
+.request-container{
+    margin-top: 40px;
+}
+.request{
+    position: relative;
+    height: 47px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.request-buttons{
+    background-color: #f1f1f1;
+    position: absolute;
+    right: 0;
+}
+.request-buttons > button {
+    background-color: white;
+}
+.request-buttons > button:nth-child(3){
+    color:red
+}
+.request-buttons > button:nth-child(1){
+    color:green
+}
+@media (max-width: 500px){
+    .request{
+        height: 100px;
+    }
+    .request-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
