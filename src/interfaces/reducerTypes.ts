@@ -11,5 +11,6 @@ export type IrequestReducer = {
   index: any,
 }
 export type IauthReducer = {
+  wrongUser: boolean,
   currentUser: any,
 }

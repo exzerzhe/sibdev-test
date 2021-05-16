@@ -65,3 +65,7 @@
 .ant-input-password-icon{
     color: rgba(209, 209, 209, 1)
 }
+.wrong-user{
+    color: red;
+    text-align: center;
+}

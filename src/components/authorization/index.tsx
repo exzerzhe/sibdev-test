@@ -5,10 +5,12 @@ import './authorization.css'
 import { logIn } from './helpers'
 import { useEffect } from 'react'
 import { useHistory } from 'react-router-dom'
+import { useSelector } from 'react-redux'
+import { RootState } from '../../reducers'
 
 const Authorization: React.FC = () => {
   const history = useHistory()
-
+  const wrongUser = useSelector((state: RootState) => state.auth?.wrongUser)
   useEffect(() => {
     if (localStorage.getItem('token')) {
       history.push('/')
@@ -24,6 +26,9 @@ const Authorization: React.FC = () => {
       >
         <img className="login-logo" alt="" src="/images/logo.svg" />
         <p className="login-title">Вход</p>
+        {wrongUser ? (
+          <p className="wrong-user">Неправильный логин или пароль</p>
+        ) : null}
         <Form.Item
           rules={[{ required: true, message: 'Введите ваш логин!' }]}
           label="Логин"

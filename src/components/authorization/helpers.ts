@@ -2,6 +2,7 @@ import { users } from './users'
 import { IAuthorizationValues } from './../../interfaces/authorizationTypes'
 import { setToken } from './../../actions/tokenAdd'
 import store from './../../store/configureStore'
+import { wrongLogin } from '../../actions/wrongLogin'
 
 export const logIn = (values: IAuthorizationValues) => {
   if (
@@ -16,4 +17,5 @@ export const logIn = (values: IAuthorizationValues) => {
     console.log('user', user)
     store.dispatch(setToken(values.username))
   }
+  store.dispatch(wrongLogin())
 }
