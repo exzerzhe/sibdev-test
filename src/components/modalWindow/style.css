@@ -1,36 +1,36 @@
-.modalWindow{
+.modal{
     position: fixed;
     padding: 36px 40px;
     background-color: white;
     box-shadow: 3px 3px 15px 0 rgba(31, 54, 80, 0.1);
 }
 @media (max-width: 600px){
-    .modalWindow{
+    .modal{
         width: 300px;
         padding: 25px 35px;
         font-size: 14;
     }
 }
-.modalWindowTitle{
+.modal__title{
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
     text-align: center;
 }
-.modalButtonItem{
+.modal__buttons__item{
     width: 210px;
 }
-.modalButtons{
+.modal__buttons{
     display: flex;
 }
 
 .buttons{
     width: 100%;
 }
-.modalButtonItem:first-child{
+.modal__buttons__item:first-child{
     margin-right: 10px;
 }
-.modalWindow .ant-form-vertical .ant-form-item-label > label{
+.modal .ant-form-vertical .ant-form-item-label > label{
     color:black;
 }
 @media (max-width: 600px) {
@@ -38,12 +38,12 @@
     font-size: 12px;
 }
 }
-  .input-number{
+  .input__number{
     margin-top: 25px;
     margin-left: 15px;
   }
   @media (max-width: 600px){
-      .input-number{
+      .input__number{
           margin-top: 49px;
       }
   }

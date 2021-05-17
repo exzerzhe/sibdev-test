@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../../pages/search.css'
+import './search.css'
 import { useSelector } from 'react-redux'
 import { Row, Col } from 'antd'
 import { Card } from 'antd'
@@ -23,7 +23,7 @@ const SearchResultsGrid: React.FC = () => {
 
   if (data && !fetching) {
     return (
-      <div style={{ marginTop: 20, display: 'flex' }}>
+      <div className="grid-container">
         <Row gutter={[20, 40]}>
           {data.items.map((item: IsearchResults, key: string) => {
             return (
@@ -38,7 +38,7 @@ const SearchResultsGrid: React.FC = () => {
                   rel="noreferrer noopener"
                 >
                   <Card
-                    className="cards-grid"
+                    className="grid-container__item"
                     size="small"
                     hoverable
                     cover={

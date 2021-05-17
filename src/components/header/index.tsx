@@ -18,23 +18,28 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <div className="container">
-        <div className="header-wrapper">
-          <div className="header-logo">
+        <div className="header__wrapper">
+          <div className="header__logo">
             <img src="/images/logo.svg" alt="" width={48} height={48} />
           </div>
-          <nav className="header-nav">
-            <NavLink className="nav-link" exact activeClassName="active" to="/">
+          <nav className="header__nav">
+            <NavLink
+              className="nav__link"
+              exact
+              activeClassName="active"
+              to="/"
+            >
               Поиск
             </NavLink>
             <NavLink
-              className="nav-link"
+              className="nav__link"
               activeClassName="active"
               to="/favorites"
             >
               Избранное
             </NavLink>
           </nav>
-          <Button onClick={del} className="header-exit">
+          <Button onClick={del} className="header__exit">
             Выйти
           </Button>
         </div>

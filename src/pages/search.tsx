@@ -41,21 +41,21 @@ const Search: React.FC = () => {
     <div>
       <div
         className={classnames(
-          data && 'container-search-complete',
-          'container-search',
-          modal && 'container-search-complete-opacity'
+          data && 'search__complete',
+          'search',
+          modal && 'search__complete__opacity'
         )}
       >
         <div
           className={classnames(
-            data && 'search-input-complete',
-            'search-input'
+            data && 'search__input__complete',
+            'search__input'
           )}
         >
           <h1
             className={classnames(
-              data && 'search-title-complete',
-              'search-title'
+              data && 'search__title__complete',
+              'search__title'
             )}
           >
             Поиск видео
@@ -70,17 +70,17 @@ const Search: React.FC = () => {
           {data ? (
             <div className="filter-panel">
               Видео по запросу
-              <span className="filter-panel-request">
+              <span className="filter-panel__request">
                 {'«' + searchValue + '»'}
               </span>
-              <span className="filter-panel-request-count">
+              <span className="filter-panel__request__count">
                 {data ? data.pageInfo.totalResults : null}
               </span>
               {width < 780 ? null : (
                 <Button
                   onClick={() => changeGrid('list')}
                   shape="circle"
-                  className="grid-list"
+                  className="list"
                   icon={<UnorderedListOutlined />}
                 />
               )}
@@ -98,7 +98,7 @@ const Search: React.FC = () => {
           <div>
             {fetching ? (
               <div className="loading">
-                <LoadingOutlined className="loading-icon" />
+                <LoadingOutlined className="loading__icon" />
               </div>
             ) : null}
           </div>

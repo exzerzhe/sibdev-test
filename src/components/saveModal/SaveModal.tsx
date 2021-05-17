@@ -26,7 +26,7 @@ const SaveModal: React.FC = () => {
           title={
             <>
               <div>
-                <p className="modal-title">
+                <p className="modal__title">
                   Поиск сохранен в разделе "Избранное"
                 </p>
               </div>
@@ -35,7 +35,7 @@ const SaveModal: React.FC = () => {
                   history.push('/favorites')
                 }}
               >
-                <p className="modal-link">Перейти в избранное</p>
+                <p className="modal__link">Перейти в избранное</p>
               </a>
             </>
           }

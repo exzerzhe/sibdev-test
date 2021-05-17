@@ -62,14 +62,14 @@ const ModalWindow: React.FC = () => {
     dispatch(closeModal())
   }
   return (
-    <div className="modalWindow">
+    <div className="modal">
       <Form
         layout="vertical"
         form={form}
         name="control-hooks"
         onFinish={onFinish}
       >
-        <h2 className="modalWindowTitle">Сохранить запрос</h2>
+        <h2 className="modal__title">Сохранить запрос</h2>
         <Form.Item
           initialValue={
             index !== '' ? requests[index].requestvalue : searchValue
@@ -119,7 +119,7 @@ const ModalWindow: React.FC = () => {
           <Col span={width < 600 ? 10 : 3}>
             <Form.Item name="maxresults">
               <InputNumber
-                className="input-number"
+                className="input__number"
                 min={1}
                 max={50}
                 value={sliderValue}
@@ -128,13 +128,13 @@ const ModalWindow: React.FC = () => {
             </Form.Item>
           </Col>
         </Row>
-        <div className="modalButtons">
-          <Form.Item className="modalButtonItem">
+        <div className="modal__buttons">
+          <Form.Item className="modal__buttons__item">
             <Button onClick={onReset} size="large" className="buttons">
               Отмена
             </Button>
           </Form.Item>
-          <Form.Item className="modalButtonItem">
+          <Form.Item className="modal__buttons__item">
             <Button
               htmlType="submit"
               size="large"

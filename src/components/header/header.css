@@ -2,7 +2,7 @@
     background-color: #fff;
     border-bottom: 1px solid #f1f1f1;
 }
-.header-wrapper{
+.header__wrapper{
     height: 80px;
     align-items: center;
     display: flex;
@@ -13,18 +13,18 @@
   padding: 0 15px;
   margin: 0 auto;
 }
-.header-logo {
+.header__logo {
     margin-right: 40px;
   }
   @media (max-width: 450px){
-    .header-logo{
+    .header__logo{
       display: none;
     }
   }
-.header-nav{
+.header__nav{
   display: flex
 }
-.nav-link {
+.nav__link {
     display: inline-block;
     height: 80px;
     font-family: Roboto;
@@ -36,7 +36,7 @@
     margin-right: 40px;
     padding-top: 25px;
   }
-.header-exit {
+.header__exit {
     font-family: Roboto;
     cursor: pointer;
     font-style: normal;
@@ -52,7 +52,7 @@
     border: none;
   }
   @media (max-width : 450px){
-    .header-exit{
+    .header__exit{
       width: 80px;
     }
   }

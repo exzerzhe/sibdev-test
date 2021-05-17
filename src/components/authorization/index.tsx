@@ -19,13 +19,13 @@ const Authorization: React.FC = () => {
   return (
     <div className="login">
       <Form
-        className="login-form"
+        className="login__form"
         layout="vertical"
         name="basic"
         onFinish={logIn}
       >
-        <img className="login-logo" alt="" src="/images/logo.svg" />
-        <p className="login-title">Вход</p>
+        <img className="login__logo" alt="" src="/images/logo.svg" />
+        <p className="login__title">Вход</p>
         {wrongUser ? (
           <p className="wrong-user">Неправильный логин или пароль</p>
         ) : null}
@@ -47,7 +47,7 @@ const Authorization: React.FC = () => {
 
         <Form.Item style={{ textAlign: 'center' }}>
           <Button
-            className="login-button"
+            className="login__button"
             type="primary"
             size="large"
             htmlType="submit"

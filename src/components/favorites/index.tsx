@@ -55,14 +55,14 @@ const Favorites: React.FC = () => {
     history.push('/')
   }
   return (
-    <div className="requests-list">
+    <div className="requests">
       <div className={classnames(modal && 'container-search-complete-opacity')}>
-        <h2 className="favorites-title">Избранное</h2>
-        <div className="request-container">
+        <h2 className="requests__title">Избранное</h2>
+        <div className="requests__container">
           {requests?.map((item: favoriteRequest, index: number) => (
-            <div className="request" key={index}>
+            <div className="requests__name" key={index}>
               {item.requestname}
-              <div className="request-buttons">
+              <div className="requests__buttons">
                 <Button
                   type="link"
                   onClick={() =>
@@ -88,7 +88,7 @@ const Favorites: React.FC = () => {
         </div>
       ) : null}
       {requests.length !== 0 ? null : (
-        <div className="request-container">Здесь пока пусто!</div>
+        <div className="requests__container">Здесь пока пусто!</div>
       )}
     </div>
   )

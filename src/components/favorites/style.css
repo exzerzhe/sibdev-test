@@ -1,9 +1,9 @@
-.requests-list{
+.requests{
     max-width: 1070px;
     padding: 0 30px;
     margin: 0 auto;
   }
-.favorites-title{
+.requests__title{
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -11,10 +11,10 @@
     line-height: 40px;
     margin-top: 40px;
 }
-.request-container{
+.requests__container{
     margin-top: 40px;
 }
-.request{
+.requests__name{
     position: relative;
     height: 47px;
     background-color: #fff;
@@ -25,25 +25,25 @@
     overflow: hidden;
     padding: 0 20px;
 }
-.request-buttons{
+.requests__buttons{
     background-color: #f1f1f1;
     position: absolute;
     right: 0;
 }
-.request-buttons > button {
+.requests__buttons > button {
     background-color: white;
 }
-.request-buttons > button:nth-child(3){
+.requests__buttons > button:nth-child(3){
     color:red
 }
-.request-buttons > button:nth-child(1){
+.requests__buttons > button:nth-child(1){
     color:green
 }
 @media (max-width: 500px){
-    .request{
+    .requests__name{
         height: 100px;
     }
-    .request-buttons{
+    .requests__buttons{
         display: flex;
         flex-direction: column;
     }

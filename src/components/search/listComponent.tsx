@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../pages/search.css'
+import './search.css'
 import { useSelector } from 'react-redux'
 import { Row, Col } from 'antd'
 import { Card } from 'antd'
@@ -23,7 +23,7 @@ const SearchResultsList: React.FC = () => {
                 rel="noreferrer noopener"
               >
                 <Card
-                  className="cards-list"
+                  className="list__item"
                   size="small"
                   hoverable
                   bordered={false}

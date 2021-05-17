@@ -5,7 +5,7 @@
     align-items: center;
   }
 
-.login-form {
+.login__form {
     border: 1px solid rgba(39, 39, 39, 0.1);
     border-radius: 5px;
     box-sizing: border-box;
@@ -14,14 +14,14 @@
     width: 510px;
     height: 520px;
 }
-.login-logo{
+.login__logo{
     display: block;
     width: 88px;
     height: 88px;
     margin: 0 auto;
 
 }
-.login-title {
+.login__title {
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -30,7 +30,7 @@
     text-align: center;
     margin-top: 32px;
 }
-.login-button{
+.login__button{
     height:52px;
     width:176px;
     font-size: 20px;
