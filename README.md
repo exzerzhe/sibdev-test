@@ -1,4 +1,6 @@
 # sibdev-test-master
+
+npm run start
  
 user: sina
 password: 123
