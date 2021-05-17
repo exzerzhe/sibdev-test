@@ -36,7 +36,7 @@ const Search: React.FC = () => {
     }
     return <SearchResultsGrid />
   }
-  const onSearch = (values: string) => SearchVideo(values, 20, 'relevance')
+  const onSearch = (values: string) => SearchVideo(values, 12, 'relevance')
   return (
     <div>
       <div

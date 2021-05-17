@@ -77,7 +77,7 @@ const ModalWindow: React.FC = () => {
           name="requestvalue"
           label="Запрос"
         >
-          <Input size="large" placeholder={searchValue} disabled />
+          <Input size="large" placeholder={searchValue} />
         </Form.Item>
         <Form.Item
           initialValue={index !== '' ? requests[index].requestname : ''}
