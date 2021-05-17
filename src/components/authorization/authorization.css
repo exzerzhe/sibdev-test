@@ -14,6 +14,7 @@
     width: 510px;
     height: 520px;
 }
+
 .login__logo{
     display: block;
     width: 88px;
@@ -21,6 +22,7 @@
     margin: 0 auto;
 
 }
+
 .login__title {
     font-family: Roboto;
     font-style: normal;
@@ -30,7 +32,12 @@
     text-align: center;
     margin-top: 32px;
 }
-.login__button{
+
+.login-button-form{
+    text-align: center;
+}
+
+.login-button-form__button{
     height:52px;
     width:176px;
     font-size: 20px;
@@ -39,6 +46,7 @@
     border-radius: 5px;
     margin-top: 10px;
 }
+
 .ant-form-item-label > label{
     font-family: Roboto;
     font-style: normal;
@@ -47,24 +55,29 @@
     line-height: 22px;
     color: rgba(23, 23, 25, 0.3)
 }
+
 .ant-form-vertical .ant-form-item-label, .ant-col-24.ant-form-item-label, .ant-col-xl-24.ant-form-item-label{
     padding: 2px
 }
+
 .ant-input{
     border-radius: 5px;
     border: 1px solid rgba(23, 23, 25, 0.2);
     padding: 7px 10px;
     font-size: 20px;
 }
+
 .ant-input-affix-wrapper{
     border-radius: 5px;
     border: 1px solid rgba(23, 23, 25, 0.2);
     padding: 7px 10px;
     font-size: 20px;
 }
+
 .ant-input-password-icon{
     color: rgba(209, 209, 209, 1)
 }
+
 .wrong-user{
     color: red;
     text-align: center;

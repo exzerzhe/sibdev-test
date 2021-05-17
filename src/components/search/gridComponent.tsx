@@ -30,7 +30,7 @@ const SearchResultsGrid: React.FC = () => {
               <Col
                 key={key}
                 span={width > 780 ? 6 : width < 350 ? 40 : 12}
-                style={{ padding: '0px 5px' }}
+                className="grid-container__col"
               >
                 <a
                   href={`https://www.youtube.com/watch?v=${item.id.videoId}`}

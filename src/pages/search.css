@@ -1,30 +1,35 @@
 .search__title{
-    text-align: center;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 52px;
-    margin-bottom: 40px;
+  text-align: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 52px;
+  margin-bottom: 40px;
 }
+
 .search{
   padding: 0 15px
 }
+
 .search__input{
   display: block;
-    margin: 0 auto;
-    max-width: 686px;
-    padding-top: 220px
+  margin: 0 auto;
+  max-width: 686px;
+  padding-top: 220px
 }
+
 .search__input__complete{
   display: block;
   margin: 0 auto;
   padding-top: 0;
   max-width: 1070px;
 }
+
 .search__complete{
   max-width: 1070px,
 }
+
 .search__complete__opacity{
   -webkit-filter: blur(8px);
   -ms-filter: blur(8px);
@@ -33,6 +38,7 @@
   filter: blur(8px);
   opacity: 0.6;
 }
+
 .search__title__complete{
   text-align: left;
   font-family: 'Roboto';
@@ -43,35 +49,43 @@
   margin-top: 30px;
   margin-bottom: 10px;
 }
+
 .filter-panel{
-margin-top: 20px;
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 16px;
-line-height: 32px;
-position: relative
+  margin-top: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  position: relative
 }
+
 @media (max-width: 320px){
+
   .filter-panel{
     font-size: 12px;
   }
 }
+
 .filter-panel__request{
   font-weight: bold;
   margin-left: 10px;
 }
+
 .filter-panel__request__count{
   font-size: 16px;
   line-height: 24px;
   color: rgba(23, 23, 25, 0.3);
   margin-left: 10px;
 }
+
 @media (max-width: 320px){
+
   .filter-panel__request__count{
     font-size: 12px;
   }
 }
+
 .list {
   position: absolute;
   right: 40px;
@@ -85,47 +99,57 @@ position: relative
 .ant-card-meta-description{
   white-space: pre-line
 }
+
 .ant-card-meta-title{
   white-space: normal;
 }
+
 .ant-card-meta-detail > div:not(:last-child){
   font-size: 14px
 }
+
 .ant-input-affix-wrapper-lg{
     padding: 4px 11px
 }
+
 .gutter-box {
     padding: 8px 0;
     background: #00a0e9;
   }
+
 .loading{
   margin-top: 100px;
   text-align: center;
 }
+
 .loading__icon{
   font-size: 100px;
   color: #1890ff
 }
+
 .modal-window{
   position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 110vh;
-    opacity: 10;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 110vh;
+  opacity: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .ant-input-search > .ant-input-group > .ant-input-group-addon .ant-input-search-button {
   border-radius: 0 2px 2px 0;
   width: 150px;
 }
+
 @media (max-width: 450px){
+
   .ant-input-search > .ant-input-group > .ant-input-group-addon .ant-input-search-button{
     width: 100px;
   }
 }
+
 .ant-card-meta-avatar{
   padding-top: 5px;
 }

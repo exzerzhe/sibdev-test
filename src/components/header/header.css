@@ -2,28 +2,35 @@
     background-color: #fff;
     border-bottom: 1px solid #f1f1f1;
 }
+
 .header__wrapper{
     height: 80px;
     align-items: center;
     display: flex;
     position: relative;
 }
+
 .container{
   max-width: 1070px;
   padding: 0 15px;
   margin: 0 auto;
 }
+
 .header__logo {
     margin-right: 40px;
   }
+
   @media (max-width: 450px){
+
     .header__logo{
       display: none;
     }
   }
+
 .header__nav{
   display: flex
 }
+
 .nav__link {
     display: inline-block;
     height: 80px;
@@ -36,6 +43,7 @@
     margin-right: 40px;
     padding-top: 25px;
   }
+
 .header__exit {
     font-family: Roboto;
     cursor: pointer;
@@ -51,11 +59,14 @@
     background-color: white;
     border: none;
   }
+
   @media (max-width : 450px){
+
     .header__exit{
       width: 80px;
     }
   }
+  
   .active {
     border-bottom: 2px solid #1390e5;
   }

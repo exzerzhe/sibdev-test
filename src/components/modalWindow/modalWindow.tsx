@@ -92,7 +92,7 @@ const ModalWindow: React.FC = () => {
           initialValue={index !== '' ? requests[index].sort : 'relevance'}
           label="Сортировать по:"
         >
-          <Select size="large" style={{ width: '100%' }}>
+          <Select size="large" className="modal__select">
             <Option value="date">Дате</Option>
             <Option value="rating">Рейтингу</Option>
             <Option value="relevance">Релевантности</Option>

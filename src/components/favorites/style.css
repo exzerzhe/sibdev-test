@@ -3,6 +3,7 @@
     padding: 0 30px;
     margin: 0 auto;
   }
+
 .requests__title{
     font-family: Roboto;
     font-style: normal;
@@ -11,9 +12,20 @@
     line-height: 40px;
     margin-top: 40px;
 }
+
+.search__complete__opacity{
+    -webkit-filter: blur(8px);
+    -ms-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    filter: blur(8px);
+    opacity: 0.6;
+  }
+  
 .requests__container{
     margin-top: 40px;
 }
+
 .requests__name{
     position: relative;
     height: 47px;
@@ -25,24 +37,31 @@
     overflow: hidden;
     padding: 0 20px;
 }
+
 .requests__buttons{
     background-color: #f1f1f1;
     position: absolute;
     right: 0;
 }
+
 .requests__buttons > button {
     background-color: white;
 }
+
 .requests__buttons > button:nth-child(3){
     color:red
 }
+
 .requests__buttons > button:nth-child(1){
     color:green
 }
+
 @media (max-width: 500px){
+    
     .requests__name{
         height: 100px;
     }
+    
     .requests__buttons{
         display: flex;
         flex-direction: column;

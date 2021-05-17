@@ -29,11 +29,10 @@ const SearchResultsList: React.FC = () => {
                   bordered={false}
                 >
                   <Meta
-                    style={{ color: 'red' }}
                     avatar={
                       <img
                         alt=""
-                        style={{ maxWidth: 160 }}
+                        className="list__item__img"
                         src={item.snippet.thumbnails.medium.url}
                       />
                     }

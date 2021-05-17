@@ -56,7 +56,7 @@ const Favorites: React.FC = () => {
   }
   return (
     <div className="requests">
-      <div className={classnames(modal && 'container-search-complete-opacity')}>
+      <div className={classnames(modal && 'search__complete__opacity')}>
         <h2 className="requests__title">Избранное</h2>
         <div className="requests__container">
           {requests?.map((item: favoriteRequest, index: number) => (

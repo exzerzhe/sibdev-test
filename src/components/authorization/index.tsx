@@ -45,9 +45,9 @@ const Authorization: React.FC = () => {
           <Input.Password />
         </Form.Item>
 
-        <Form.Item style={{ textAlign: 'center' }}>
+        <Form.Item className="login-button-form">
           <Button
-            className="login__button"
+            className="login-button-form__button"
             type="primary"
             size="large"
             htmlType="submit"
