@@ -105,12 +105,12 @@ const ModalWindow: React.FC = () => {
           <Col span={width < 600 ? 13 : 18}>
             <Form.Item
               name="maxresults"
-              initialValue={index !== '' ? requests[index].maxresults : '20'}
+              initialValue={index !== '' ? requests[index].maxresults : '50'}
               label="Максимальное количество"
             >
               <Slider
                 min={1}
-                max={20}
+                max={50}
                 onChange={increaseNum}
                 value={sliderValue}
               />
@@ -121,7 +121,7 @@ const ModalWindow: React.FC = () => {
               <InputNumber
                 className="input-number"
                 min={1}
-                max={20}
+                max={50}
                 value={sliderValue}
                 onChange={increaseNum}
               />
